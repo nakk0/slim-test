@@ -20,7 +20,7 @@
         function set_alunni($alunni){
             $this->alunni = $alunni;
         }
-
+        
         function toString(){
             $str;
             foreach($this->alunni as $a){
@@ -37,6 +37,10 @@
                 }
             }
             return $students;
+        }
+
+        function addAlunno(Alunno $a){
+            array_push($this->alunni, $a);
         }
     }
 ?>
